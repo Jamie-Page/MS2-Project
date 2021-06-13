@@ -25,9 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
+cardArray.sort() ==> 0.5 - Math.Random()
+
 const grid = document.querySelector('.grid')
+const resultDisplay = document.querySelector('#result')
 var cardsChosen = []
 var cardsChosenId = []
+var cardsWon = []/* PUT A VAR EACH TIME A NEW POSSIBLITY COMES IN */
 
 
 /* creating the board */ 
@@ -51,9 +55,22 @@ function checkForMatch() {
     const optionOneId = cardsChosenId[0]
     const optionTwoId = cardsChosenId[1]
     if (cardsChosen[0] === cardsChosen [1]) {
-        alert('You founf a match')
-        cards[optionOneId].setAttribute('src', 'images ')
+        alert('You found a match.')
+        cards[optionOneId].setAttribute('src', 'images/white.png')
+        cards[optionTwoId].setAttribute('src', 'images/white.png')
+        cardsWon.push(cardsChosen)
+    } else {
+       cards[optionOneId].setAttribute('src', 'images/blank.png')
+       cards[optionTwoId].setAttribute('src', 'images/blank.png')
+       alert('Sorry, Please try again.')
     }
+    cardsChosen = []
+    cardsChosenId = []
+    resultDisplay.textContent = cardsWon.length
+    if (cardsWon.length === cardsArray.length/2) {
+        resultDisplay.textContent = 'congratulation! You found them all'
+    }
+    
 }
 
 
