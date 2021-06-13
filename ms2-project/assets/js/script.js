@@ -25,4 +25,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
+const grid = document.querySelector('.grid')
 /* creating the board */ 
+
+functuion createBoard() {
+
+    for (let i = 0 < cardArray, length; i++) {
+        var card = document.createElement('img')
+        card.setAttribute('src', 'images/blank.png') /* need to change this for my images in future */
+        card.setAttribute('data-id', i)
+        // card.addEventListener('click', flipcard)
+    }
+
+}
