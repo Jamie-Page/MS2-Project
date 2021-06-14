@@ -1,23 +1,43 @@
 document.addEventListener('DOMContentLoaded', () => {
     //card options 
-    const cardArray = [
+    const cardArray = [  /* Two of each for a matching set of cards */
         {
             name: 'ada',
             img: 'images/ada.png'
         },
          {
-            name: 'bitcoin', /* need to change all of these for each image chosen */
-            img: 'images/bitcoin.png'
+            name: 'ada', 
+            img: 'images/ada.png'
         },
          {
             name: 'etherium',
             img: 'images/etherium.png'
         },
          {
+            name: 'etherium',
+            img: 'images/etherium.png'
+        },
+         {
+            name: 'bitcoin',
+            img: 'images/bitcoin.png'
+        },
+        {
+            name: 'bitcoin',
+            img: 'images/bitcoin.png'
+        },
+        {
             name: 'tether',
             img: 'images/tether.png'
         },
-         {
+        {
+            name: 'fries',
+            img: 'images/fries.png'
+        },
+        {
+            name: 'fries',
+            img: 'images/fries.png'
+        },
+        {
             name: 'fries',
             img: 'images/fries.png'
         },
@@ -25,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
-cardArray.sort(() => 0.5 - Math.Random(()
+cardArray.sort(() => 0.5 - Math.Random())
 
 const grid = document.querySelector('.grid')
 const resultDisplay = document.querySelector('#result')
