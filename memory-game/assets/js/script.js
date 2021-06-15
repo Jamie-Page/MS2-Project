@@ -1,82 +1,67 @@
 document.addEventListener('DOMContentLoaded', () => {
-    //card options 
-    const cardArray = [  /* Two of each for a matching set of cards */
+    //card options
+    const cardArray = [
         {
             name: 'ada',
-            img: 'memory-game/images/ada.jpg'
+            img: 'images/ada.jpg'
         },
-         {
-            name: 'ada', 
-            img: 'memory-game/images/ada.jpg'
+        {
+            name: 'ada',
+            img: 'images/ada.jpg'
         },
-         {
+        {
             name: 'bitcoin',
-            img: 'memory-game/images/bitcoin.jpg'
+            img: 'images/bitcoin.jpg'
         },
-         {
+        {
             name: 'bitcoin',
-            img: 'memory-game/images/bitcoin.jpg'
-        },
-         {
-            name: 'etherium',
-            img: 'memory-game/images/etherium.jpg'
+            img: 'images/bitcoin.jpg'
         },
         {
             name: 'etherium',
-            img: 'memory-game/images/etherium.jpg'
+            img: 'images/etherium.jpg'
+        },
+        {
+            name: 'etherium',
+            img: 'images/etherium.jpg'
         },
         {
             name: 'litecoin',
-            img: 'memory-game/images/litecoin.jpg'
+            img: 'images/litecoin.jpg'
         },
         {
             name: 'litecoin',
-            img: 'memory-game/images/litecoin.jpg'
+            img: 'images/litecoin.jpg'
         },
         {
             name: 'neo',
-            img: 'memory-game/images/neo.jpg'
+            img: 'images/neo.jpg'
         },
         {
             name: 'neo',
-            img: 'memory-game/images/neo.jpg'
-        },
-         {
-            name: 'tether',
-            img: 'memory-game/images/tether.jpg'
+            img: 'images/neo.jpg'
         },
         {
             name: 'tether',
-            img: 'memory-game/images/tether.jpg'
+            img: 'images/pizza.jpg'
         },
-    ]
+        {
+            name: 'tether',
+            img: 'images/tether.jpg'
+        }
 
-})
-
-cardArray.sort(() => 0.5 - Math.Random())
-
-const grid = document.querySelector('.grid')
-const resultDisplay = document.querySelector('#result')
-var cardsChosen = []
-var cardsChosenId = []
-var cardsWon = []/* PUT A VAR EACH TIME A NEW POSSIBLITY COMES IN */
-
-
-/* creating the board */ 
-
-cardArray.sort(()=>0.5-Math.random())
+    ];
+    cardArray.sort(()=>0.5-Math.random())
     const grid = document.querySelector('.grid');
     const resultDisplay = document.querySelector('#result')
     var cardsChosen = [];
     var cardsChosenId = [];
-    var cardsWon = [];/* PUT A VAR EACH TIME A NEW POSSIBLITY COMES IN */
+    var cardsWon = [];
     //create your board
-
-
     function createBoard(){
         for(let i = 0;i<cardArray.length;i++){
           var card = document.createElement('img')
-          card.setAttribute('src','memory-game/images/blank.jpg')
+          card.setAttribute('src','images/blank.jpg')
           card.setAttribute('data-id',i)
           card.addEventListener('click',flipCard)
           grid.appendChild(card)
@@ -89,13 +74,13 @@ cardArray.sort(()=>0.5-Math.random())
         const optionTwoId = cardsChosenId[1]
         if(cardsChosen[0]===cardsChosen[1]){
             alert('You Found A Match!!!')
-            cards[optionOneId].setAttribute('src','memory-game/images/white.jpg')
-            cards[optionTwoId].setAttribute('src','memory-game/images/white.jpg')
+            cards[optionOneId].setAttribute('src','images/white.jpg')
+            cards[optionTwoId].setAttribute('src','images/white.jpg')
             cardsWon.push(cardsChosen)
         }
         else {
-            cards[optionOneId].setAttribute('src','memory-game/images/blank.jgp')
-            cards[optionTwoId].setAttribute('src','memory-game/images/blank.jgp')
+            cards[optionOneId].setAttribute('src','images/blank.jpg')
+            cards[optionTwoId].setAttribute('src','images/blank.jpg')
             alert('Sorry, try again')
         }
         cardsChosen = []
@@ -119,3 +104,4 @@ cardArray.sort(()=>0.5-Math.random())
         }
     }
     createBoard();
+})
