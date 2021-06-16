@@ -3,4 +3,15 @@
     flex-wrap: wrap;
     height:300px;
     width:400px;
+    
+}
+
+.background {
+    background-color: lightblue;
+    opacity: 100%;
+    
+}
+
+.result {
+    text-align: center;
 }
