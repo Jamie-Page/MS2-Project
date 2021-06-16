@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             name: 'tether',
-            img: 'images/tether.jgp'
+            img: 'images/tether.jpg'
         },
         {
             name: 'ada',
