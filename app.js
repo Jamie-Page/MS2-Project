@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             name: 'etherium',
-            img: 'images/therium.jpg'
+            img: 'images/etherium.jpg'
         },
         {
             name: 'litecoin',
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard(){
         for(let i = 0;i<cardArray.length;i++){
           var card = document.createElement('img')
-          card.setAttribute('src','images/blank.jpg')
+          card.setAttribute('src','images/doge.jpg') /* this was blank too */
           card.setAttribute('data-id',i)
           card.addEventListener('click',flipCard)
           grid.appendChild(card)
@@ -75,12 +75,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if(cardsChosen[0]===cardsChosen[1]){
             alert('You Found A Match!!!')
             cards[optionOneId].setAttribute('src','images/white.jpg')
-            cards[optionTwoId].setAttribute('src','images/white.jgp')
+            cards[optionTwoId].setAttribute('src','images/white.jpg') /* this was white.jpg*/
             cardsWon.push(cardsChosen)
         }
         else {
-            cards[optionOneId].setAttribute('src','images/blank.jgp')
-            cards[optionTwoId].setAttribute('src','images/blank.jgp')
+            cards[optionOneId].setAttribute('src','images/doge.jpg')
+            cards[optionTwoId].setAttribute('src','images/doge.jpg')
             alert('Sorry, try again')
         }
         cardsChosen = []
