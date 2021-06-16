@@ -3,6 +3,9 @@
     flex-wrap: wrap;
     height:300px;
     width:400px;
+    text-align: center;
+    padding-left: 200px;
+    padding-bottom: 20px;
     
 }
 
@@ -14,4 +17,8 @@
 
 .result {
     text-align: center;
+}
+
+.main-header {
+    padding-left: 150px;
 }
