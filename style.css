@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
-
+/* main header for title */ 
 body {
     font-size: 26px;
     line-height: 25px;
@@ -24,9 +24,12 @@ body {
 
 
 header {
-    background: #252626;
+    background:#252626;
     padding: 10px 0px;
+    margin-top: auto;
+
 }
+
 
 
 .menu {
@@ -101,4 +104,10 @@ transform-style: preserve-3d;
 transition: transform 0.5s; 
 }
 }
-/*main header*/
+
+/*footer */
+
+.footer {
+background: #252626;
+padding-top: 100px;
+}
