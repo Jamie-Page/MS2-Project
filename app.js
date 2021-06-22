@@ -74,8 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const optionTwoId = cardsChosenId[1]
         if(cardsChosen[0]===cardsChosen[1]){
             alert('You Found A Match!!!')
-            cards[optionOneId].setAttribute('src','images/white.jpg')
-            cards[optionTwoId].setAttribute('src','images/white.jpg') /* this was white.jpg*/
+            cards[optionOneId].setAttribute('src','images/thumbs-up.jpg')
+            cards[optionTwoId].setAttribute('src','images/thumbs-up.jpg') /* this was white.jpg*/
             cardsWon.push(cardsChosen)
         }
         else {
