@@ -45,7 +45,7 @@ This project is hosted using GitHub pages, deployed from the main branch. The si
 commits to the master branch. To deploy the project correctly on GitHub pages, the landing site must he named index.html
 
 If you want run the project locally you need to clone the repository directly into your favorite editor by writing to the terminal 
-the following: git clone https://jamie-page.github.io/MS2-Project/
+the following: git clone https://jamie-page.github.io/The-Dogey-Game/
 
 
 # Credits 
@@ -57,3 +57,11 @@ All the Crypto images are off google images but i resized them all to 100x100 fo
 Validated the HTML code with W3C and no error found.
 
 Validated the CSS code with W3C and no error found.
+
+# Responsiveness 
+
+I have not made this game for mobile use yet as im stuggling to make it for Mobile but im sure on my next submit I will be able to make it ready for mobile. 
+
+# Wireframes 
+ 
+Ran out of time to add some wireframes in. 
