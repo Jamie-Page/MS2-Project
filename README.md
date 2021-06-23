@@ -39,4 +39,21 @@ was an imported image. So for the fix I used a main HTML source title with basic
 
 Second bug I came across. Its not so much a bug but it was when I clicked on a card and it was correct the card turned 
 white and it did not look good one bit. So I put a thumbs up icon.
+# Deployment
 
+This project is hosted using GitHub pages, deployed from the main branch. The site will update automatically upon new 
+commits to the master branch. To deploy the project correctly on GitHub pages, the landing site must he named index.html
+
+If you want run the project locally you need to clone the repository directly into your favorite editor by writing to the terminal 
+the following: git clone https://jamie-page.github.io/MS2-Project/
+
+
+# Credits 
+
+All the Crypto images are off google images but i resized them all to 100x100 for all of them.
+
+
+# Code Validation
+Validated the HTML code with W3C and no error found.
+
+Validated the CSS code with W3C and no error found.
