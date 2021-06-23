@@ -32,4 +32,11 @@ and reset nicely.
 
 I personally tested the game alot and tested diffrent colour schemes to try make sure visually it didnt look to bad. 
 
+# Bugs I came across
+
+When testing for the game I came across that when I clicked on a card and got the right match my main title would change (Weird) but it 
+was an imported image. So for the fix I used a main HTML source title with basic styling.
+
+Second bug I came across. Its not so much a bug but it was when I clicked on a card and it was correct the card turned 
+white and it did not look good one bit. So I put a thumbs up icon.
 
