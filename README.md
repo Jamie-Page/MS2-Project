@@ -17,4 +17,19 @@ Javascript
 
 # Features
 
-Main 
+Main and only feature really is the main grid which is all javascript.
+
+# Features I want to do in the future
+
+In the future i want to add some sounds for when the game ends it makes a little few second sound to say "well done" or "congratulations".
+
+I want to add in where the cards flip back over smoothly if I get the cards wrong. 
+
+# Testing 
+
+Throughout all of the game I kept on testing the game to make sure on when I click on the selected cards they all respond 
+and reset nicely.
+
+I personally tested the game alot and tested diffrent colour schemes to try make sure visually it didnt look to bad. 
+
+
